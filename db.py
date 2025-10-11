@@ -7,7 +7,7 @@ import os
 # sqlalchemy_dataabase_url = f"postgresql://{setting.database_username}:{setting.database_password}@{setting.database_hostname}:{setting.database_port}/{setting.database_name}"
 # engine = create_engine(sqlalchemy_dataabase_url)
 
-SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL")
+SQLALCHEMY_DATABASE_URL = setting.DATABASE_URL
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
 sessionlocal = sessionmaker(autoflush=False,autocommit=False,bind=engine)
