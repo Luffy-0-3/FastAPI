@@ -38,7 +38,7 @@ class votes_count(BaseModel):
 
 class users(BaseModel):
     email : EmailStr
-    # password : str
+    password : str
 
 class view_user_data(BaseModel):
     id : int
