@@ -1,3 +1,4 @@
 .env
 dbenv/
 __pycache__
+.github
